@@ -1,0 +1,6 @@
+{
+  "name": "Remix: 雙組競賽計時器",
+  "description": "提供兩組獨立的計時器，包含毫秒顯示，適合比賽使用。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
