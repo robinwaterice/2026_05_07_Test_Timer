@@ -1,20 +1,75 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <h1>ROBIN的計時器 (Robin's Timer)</h1>
+  <p>🕒 不只是計時，更是掌控節奏的終極工具。為多工處理量身打造的專業雙群組同步計時器。</p>
 </div>
 
-# Run and deploy your AI Studio app
+## 🌟 為什麼你需要這個專案？
 
-This contains everything you need to run your app locally.
+你是否曾經在做實驗、烹飪、健身或是進行專案時，需要同時追蹤多個任務的時間，卻被手機裡簡陋的計時器搞得手忙腳亂？
 
-View your app in AI Studio: https://ai.studio/apps/56c1a7ec-7ad9-4269-8178-b32e4126b4a3
+**ROBIN的計時器** 正是為了解決這個痛點而生。它不僅提供了極致精準的毫秒級倒數，更配備了極具未來感的深色玻璃擬物化 (Glassmorphism) 介面。這不只是一個實用的工具，更是一個讓你在工作時看了心情愉悅的桌面藝術品。無論是需要極致專注的番茄鐘工作法，還是需要嚴格對時的賽事紀錄，它都能完美勝任。
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+### 🔥 為什麼它能讓你愛不釋手？(Key Features)
 
+*   **⚡ 毫不妥協的流暢與精準** 
+    *   告別卡頓的跳秒！支援高達 `50fps` 的螢幕更新率，每一次的數字跳動都如絲般順滑。時間精度更是直達**毫秒級** (`MM:SS.ms`)，絕不錯過任何一瞬。
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+*   **🎯 雙管齊下，效率加倍 (Dual Timers)** 
+    *   擁有 Primary 與 Secondary 兩個完全獨立的計時區塊。你可以直接點擊標題**自訂名稱**（例如：「寫程式」與「喝水休息」），讓每個任務都有專屬的追蹤空間。
+
+*   **🎛️ 完美的一鍵同步控制** 
+    *   最底層的「全局操作列」是多工處理的神兵利器。只需按下一鍵，兩個計時器就能**零誤差同步啟動、暫停或重置**，再也不用為了對齊時間而手忙腳亂。
+
+*   **🚩 滴水不漏的計圈紀錄 (Lap Tracking)** 
+    *   每個任務最多支援 **10 筆**分段計時。獨特的「反向滾動式」清單設計，讓你永遠第一眼就看到最新鮮的數據。
+
+*   **🎵 聲歷其境的沈浸體驗** 
+    *   每一個點擊、每一次計圈、每一次暫停，都有清脆動聽的專屬音效回饋。就算不盯著螢幕，也能透過聽覺確認操作。
+
+*   **📱 隨時隨地，完美呈現** 
+    *   採用最新的 Tailwind CSS `@container` 技術打造。無論你是用手機、平板還是超寬螢幕打開，介面都會自動以最完美的比例呈現在你眼前。
+
+---
+
+## 🛠️ 強大且穩定的技術基石
+
+好看的外表下，藏著扎實的工程底蘊：
+
+*   **極速驅動:** React 19 + Vite 6，提供最現代化的開發與執行效能。
+*   **堅固可靠:** TypeScript 嚴格型別檢查，確保每一次計時的穩定性。
+*   **精準控制:** 巧妙運用 React `forwardRef` 與 `useImperativeHandle`，實現父子層組件的完美連動。
+
+---
+
+## 🚀 迫不及待想試試看嗎？
+
+只需三個簡單的步驟，立刻在你的電腦上體驗：
+
+> [!IMPORTANT]
+> **先決條件:** 電腦中需安裝 Node.js
+
+1.  **安裝專案依賴:**
+    ```bash
+    npm install
+    ```
+
+2.  **一鍵啟動伺服器:**
+    ```bash
+    npm run dev
+    ```
+
+3.  **立刻體驗:**
+    打開終端機顯示的網址（通常是 `http://localhost:3000` 或 `http://localhost:5173`），享受流暢的計時體驗！
+
+---
+
+## 📦 建置與分享
+
+想把這個酷東西部署到網路上給朋友用？只需一行指令：
+
+```bash
+npm run build
+```
+將會自動輸出最優化過後的靜態檔案到 `dist` 資料夾，你可以輕鬆放上 Vercel 或是 GitHub Pages 炫耀一番！
